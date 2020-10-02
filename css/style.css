@@ -23,10 +23,6 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-p {
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-weight: bold;
-}
 
 #footer{
   margin-top: 20px;
@@ -54,19 +50,22 @@ margin-right: 10px;
   border-bottom-style:solid ;
   border-width: .5px;
 }
+#headShot{
+  border-style: solid;
+
+  border-color: #f8f9fa;
+}
 
 #bio {
-  font-family: 'PT Sans Narrow', sans-serif;
+
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 10px;
-  font-weight: bolder;
 }
 
 ul {
-  /* font-weight: bold; */
-  font-family: 'PT Sans Narrow', sans-serif;
+ 
   font-weight: bold;
 }
 
@@ -84,26 +83,16 @@ li{
   flex: auto;
 }
 
-/* contact page*/
-
-#contact{
-
-  color: honeydew;
-  border-bottom-style:solid ;
-  border-width: .5px;
-}
-.contactinfo{
-  display: flex;
-  flex-wrap: wrap;
-  background-color: ivory;
-}
-.card {
-  overflow: hidden;
-
-  width: 100%;
-  margin-bottom: 5px;
+/* links page */
+.links{
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
  
+  padding: 10px;
+  box-shadow: 0px 15px 18px #888888;
 }
+
 
 /*portfolio page*/
 .portnav{
@@ -134,8 +123,12 @@ li{
      width: 100%;
      
 
-     
- }
+}
+   .links{
+display: none;
+
+   }
+ 
   body {
     background-color: rgb(56, 59, 55);
   }
