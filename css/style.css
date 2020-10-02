@@ -6,10 +6,14 @@ body {
   min-height: 400px;
   margin-bottom: 100px;
   clear: both;
+  background-color: rgb(255, 255, 255);
+  
 }
 .top{
-  
+  margin-top: 10px;
   background-color: olive;
+  border-style: solid;
+  border-color: rgb(223, 223, 223);
 
   
 }
@@ -70,7 +74,11 @@ ul {
 }
 
 .credentials{
+  margin-top: 10px;
   background-color: olive;
+  border-style: solid;
+  border-color: rgb(223, 223, 223);
+  
  
 
 }
@@ -93,9 +101,15 @@ li{
   font-weight: bold;
   height: 300px;
   margin-top: 80px;
+  background-color: #ebebe6;
+}
+.hide{
+  display: none;
 }
 
-
+a{
+  color: black;
+}
 /*portfolio page*/
 .portnav{
   font-size: 11px;
@@ -106,16 +120,25 @@ li{
 }
 .port{
   text-align: center;
-  margin-top: 20px;
+ margin-bottom: 10px;
 
 }
 .portsize{
   color: honeydew;
 }
-
-.hide{
-  display: none;
+.card{
+  margin-top: 10px;
 }
+.card-text{
+  text-align: center;
+  font-weight: bold;
+}
+#fotterTxt{
+  font-weight: bold;
+  font-size: 10px;
+}
+
+
 /*media page*/
 
 @media screen and (max-width: 768px) {
@@ -153,4 +176,6 @@ display: none;
       max-width: 0;
       
   }
+  
+  
 }
