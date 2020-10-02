@@ -1,70 +1,157 @@
+/*all*/
+.container{
+  padding-right: 0;
+}
 body {
-    color: #222222;
-    font-size: 1em;
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  min-height: 400px;
+  margin-bottom: 100px;
+  clear: both;
+}
+.top{
+  
+  background-color: olive;
+
+  
 }
 
-.content-footer,
-.masthead-heading,
-.masthead-intro {
+.name {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+}
+
+.bar {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bold;
+}
+
+#footer{
+  margin-top: 20px;
+
+  background-color: #f8f9fa;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  box-shadow: 0 -1px 0 rgb(226, 226, 226);
+}
+/*index, home page*/
+
+
+
+img{
+
+margin-right: 10px;
+
+
+}
+
+#aboutMe{
+  color: honeydew;
+  border-bottom-style:solid ;
+  border-width: .5px;
+}
+
+#bio {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  font-weight: bolder;
+}
+
+ul {
+  /* font-weight: bold; */
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bold;
+}
+
+.credentials{
+  background-color: olive;
+ 
+
+}
+li{
+  margin-right: 10px;
+}
+#credTitle{
+  color: honeydew;
+  margin-top: 20px;
+  flex: auto;
+}
+
+/* contact page*/
+
+#contact{
+
+  color: honeydew;
+  border-bottom-style:solid ;
+  border-width: .5px;
+}
+.contactinfo{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: ivory;
+}
+.card {
+  overflow: hidden;
+
+  width: 100%;
+  margin-bottom: 5px;
+ 
+}
+
+/*portfolio page*/
+.portnav{
+  font-size: 11px;
+}
+.portname{
+  font-weight: bolder;
+  font-size: 14px;
+}
+.port{
   text-align: center;
-}
 
-.masthead {
-  padding: 6em 0;
-  background-image: url('../img/code.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
 }
+.portsize{
+  font-size: 28px;
+  color: honeydew;
+  border-bottom-style:solid ;
+  border-width: .5px;
 
-.masthead-intro {
-    margin-bottom: 0.1em;
-    font-size: 2em;
-    color: #ffffff;
 }
+/*media page*/
 
-.masthead-heading {
-    margin-top: -0.2em;
-    font-weight: bold;
-    font-size: 6em;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    color: #ffffff;
-}
+@media screen and (max-width: 768px) {
+ .port{
+     margin-left: -.2px;
+    
+     width: 100%;
+     
 
-.details {
-    max-width: 38em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-}
+     
+ }
+  body {
+    background-color: rgb(56, 59, 55);
+  }
+  .container{
 
-.details > p {
-    font-weight: 300;
-    letter-spacing: 0.05em;
-}
+      width: 100%;
+      margin-left: 0px;
+      position: relative;
+      height: 100%;
+      padding-right: 15px;
+     
+  }
 
-.details > h2 {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: 2em 0 1em 0;
-}
-
-section > h1 {
-    margin-top: 2em;
-}
-
-#footer {
-  padding: 20px 0;
-  text-align: center;
-  background-color: #111111;
-  text-decoration: none;
-}
-
-#footer a {
-  color: #ffffff;
-}
-.social > li {
-  display: inline-block;
-  margin: 0 5px;
+  .row-cols-2{
+      margin-left: 15px;
+      max-height: 0;
+      max-width: 0;
+      
+  }
 }

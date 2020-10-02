@@ -1,40 +1,125 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-
-    <title>About Me</title>
-    <link rel="stylesheet" href="css/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
+    <title>BootStrapHW</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--js-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!--<link rel="stylesheet" type="text/css" href="css/reset.css">-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    
 </head>
-
+<!--navbar, use ml-auto to make align right, mr-auto to alight left-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand name">Giovanny Franco</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link bar" href="file:///C:/Users/User/homeWork/weekTwoHw/index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bar" href="file:///C:/Users/User/homeWork/weekTwoHw/portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bar" href="file:///C:/Users/User/homeWork/weekTwoHw/contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 <body>
-    <header class='masthead'>
-        <p class='masthead-intro'>Hi I'm</p>
-        <h1 class='masthead-heading'>Giovanny Franco</h1>
-    </header>
-    <section class="details">
-      <h1>Introduction</h1>
-      <p>I am a software developer</p>
-      <h1>Where I'm From</h1>
-      <p>California</p>
-      <h1>What are your favorite hobbies?</h1>
-      <p>Graphic designing is a hobby i enjoy doing the most.</p>
-      <h1>What's your dream job?</h1>
-      <p>An ideal job for me would be to be part of a team to help develop innovative and creative software as a sofware developer. </p>
-      <h1>Where do you live?</h1>
-      <p>Ontario</p>
-      <h1>Why do you want to be a web developer?</h1>
-      <p>I am very enthusiastic about learning new computer languages and using that to develop programs, websites, applications ect. I enjoys the final product such as flow and layout of a program, website, and applications</p>
-    </section>
+  <div class ="container">
+    <div class="row justify-content-start">
+          <div class="container top row col-md-4">
+          
 
-    <footer id="footer">
-        <ul class="social">
-          <li><a href="http://www.github.com/gfranco19">Github</a></li>
-        </ul>
-    </footer>
+        <section id="aboutMe">
+            <p><h1>About Me</h1></p>
+          </section>
+        
+
+        <p id="bio"><img src="images/profile-image.png" ALIGN="left" width="150" height="150" alt="dummyPicture">Hello, if you are on this page its for two reasons, either you are planning on hiring me or you want to collaborate with me. Either way, you are welcomed to look because im sure you will find what you are looking for here.</p>
+        <br>
+        <br>
+
+        </div>
+        <div class="credentials container row justify-content-end col-md-4 offset-md-4">
+          <section id="credTitle"><h1 >Credentials   : </h1></section>
+
+          <p><ul>
+            <li>A.S. Computer Programming</li>
+            <li>Skill Certificate in Object-Oriented Design & Programming</li>
+            <li>Skill Certificate in Computer Information Technology</li>
+            <li>Skill Certificate in C++ Programming</li>
+          </ul></p>
+        </div>
+      </div>
+    </div>
+<br>
+<div class="container-fluid">
+  <div class="row row-cols-1">
+    <div class="col top port"><h1 class="portsize">Portfolio</h1>
+    <br>
+    </div>
+  </div>
+
+  <!--portfolio cards//mx-auto to center-->
+  <div class="row row-cols-2 ">
+    <div class="col-6"><div class="card mx-auto" style="width: 18rem;">
+      <img src="images/portfoli.png" width="150" height="150" class="card-img-top" alt="portfolio">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div></div>
+    <div class="col-6"><div class="card mx-auto" style="width: 18rem;">
+      <img src="images/portfoli.png"  width="150" height="150"class="card-img-top" alt="portfolio">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div></div>
+    <div class="col-6"><div class="card mx-auto" style="width: 18rem;">
+      <img src="images/portfoli.png"  width="150" height="150"class="card-img-top" alt="portfolio">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div></div>
+    <div class="col-6"><div class="card mx-auto" style="width: 18rem;">
+      <img src="images/portfoli.png"  width="150" height="150" class="card-img-top" alt="portfolio">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div></div>
+</div>
+</div>
+
 </body>
+
+<footer id="footer">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-bottom">
+    
+    <div class="navbar">
+      <span class="navbar"></span>
+    </div>
+    <div class=" navbar" id="navbarNav">
+      <ul class="navbar-nav ">
+        <li class="nav-item a">
+          <a class="nav-link bar" href="file:///C:/Users/User/homeWork/weekTwoHw/index.html">github <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item mr-auto">
+          <a class="nav-link bar" href="file:///C:/Users/User/homeWork/weekTwoHw/portfolio.html">linked in</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+ 
+</footer>
 
 </html>
