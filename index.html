@@ -8,123 +8,150 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!--js-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <!--<link rel="stylesheet" type="text/css" href="css/reset.css">-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;600&display=swap" rel="stylesheet">
     
 </head>
-<!--navbar, use ml-auto to make align right, mr-auto to alight left-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand name">Giovanny Franco</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      
-      <ul class=" hide navbar-nav ml-auto">
-        Links: 
-        <li class="nav-item ">
-          
-          <a class="nav-link bar" href="https://github.com/gfranco19?tab=repositories" target="_blank">github <span class="sr-only"></span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link bar" href="https://www.linkedin.com/in/giovanny-franco-5a1882b8/" target="_blank">LinkedIn</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link bar" href="file:///C:/Users/User/homeWork/weekTwoHw/contact.html" target="_blank">Resume</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-<body>
-  <div class="container">
-    <div class="row">
-      <div class="credentials col order-last">
-        <section id="credTitle"><h1 >Credentials</h1></section>
-
-          <p><ul>
-            <li>A.S. Computer Programming</li>
-            <li>Skill Certificate in Object-Oriented Design & Programming</li>
-            <li>Skill Certificate in Computer Information Technology</li>
-            <li>Skill Certificate in C++ Programming</li>
-          </ul></p>
-      </div>
-      <div class="col links"><section><h1>Links</h1></section>
-        <br>
-        <br>
-        <a href= "https://github.com/gfranco19?tab=repositories" target="_blank">github</a>
-        <br>
-        <br>
-        <a href= "https://www.linkedin.com/in/giovanny-franco-5a1882b8/" target="_blank">LinkedIn</a>
-        <br>
-        <br>
-        <a href= "https://github.com/gfranco19?tab=repositories" target="_blank">resume</a>
-      </div>
-      <div class=" top col order-first">
-        <section id="aboutMe">
-          <p><h1>About Me</h1></p>
-        </section>
-        <img id="headShot" src="images/Head_shot.jpg" ALIGN="left" width="150" height="200" alt="headShot">
-
-      <p id="bio">Hello, if you are on this page its for two reasons, either you are planning on hiring me or you want to collaborate with me. Either way, you are welcomed to look because im sure you will find what you are looking for here.</p>
-      <br>
-      <br>
-      </div>
-    </div>
-  </div>
+<script>
+  $(window).scroll(function(){
+    $(".main").css("opacity", 1.15 - $(window).scrollTop() / 1000);
+  });
+  $(window).scroll(function(){
+    $(".qualifications").css("opacity", 2 - $(window).scrollTop() / 1000);
+  });
+</script>
+  <body>
   
-<div class="container-fluid">
-  <div class="row row-cols-1">
-    <div class="col top port"><h1 class="portsize">Portfolio</h1>
+    <div id="mySidenav" class="sidenav">
+      <a href="#div1" id="about">About</a>
+      <a href="#div2" id="qualifications">Qualifications</a>
+      <a href="#div3" id="projects">Projects</a>
+      <a href="#div4" id="contact">Contact</a>
+    </div>
+
+  <div class="main">
     <br>
-   
-  
+    <br>
+    <br>
+    <h1 class="tittles" id="div1">About Me</h1>
+    <div class="about">
+    <br>
+    <br>
+    <div class="image-cropper">
+    <img src="images/Head_shot.jpg" alt="Head_shot" class="profile-pic">
+  </div>
+    <br>
+    <br>
+    <p>
+    Giovanny Franco is an aspiring entrepreneur, with experience managing self-made applications and team web apps. His background in visual design, and web design inform him mindful but competitive in approach. Giovanny is fueled by his passion for understanding the vas market of trendiness and his knowledge in sociology gives him an understanding of cross-culture appropriations. He considers himself a ‘forever student,’ eager to both build on his academic foundations in computer programming and sociology and stay in tune with the latest digital marketing strategies through continued coursework.
+    </p>
+    <p>
+    His hunger for knowledge and determination to turn information into action has contributed to his most recent success at the University of Riverside, where he won an academic scholarship for the URC coding bootcamp by obtaining two letters of recommendations from former programming professors. Nonetheless, he is more than halfway through the course and will implement the standards learned to ensure a clean structure in his work.
+  </p>
+    Giovanny believes mindfulness in the workplace is key to success. In practice he lives out through his interests in painting, graphic design, photography, and web design. Giovanny is currently working as a freelance web application creator and is always interested in a challenge.
+    <br>
+    <br>
 
-  <!-- portfolio cards//mx-auto to center -->
-  <div class="row row-cols-2 ">
-    <div class="col"><div class="card mx-auto" >
-      <img src="images/pwsd.JPG" width="200" height="500" class="card-img-top" alt="portfolio">
-      <div class="card-body">
-        <p class="card-text"><a href="https://gfranco19.github.io/passwordGenerator/" target="_blank">Password Generator</a></p>
-      </div>
-    </div></div>
-    <div class="col"><div class="card mx-auto" >
-      <img src="images/portfoli.png"  width="200" height="500"class="card-img-top" alt="portfolio">
-      <div class="card-body">
-        <p class="card-text">Under Construction</p>
-      </div>
-    </div></div>
-    <div class="col"><div class="card mx-auto" >
-      <img src="images/scheduler.JPG"  width="200" height="500"class="card-img-top" alt="portfolio">
-      <div class="card-body">
-        <p class="card-text"><a href="https://gfranco19.github.io/scheduler/" target="_blank">Scheduler</a></p>
-      </div>
-    </div></div>
-    <div class="col"><div class="card mx-auto">
-      <img src="images/lC.JPG"  width="200" height="500" class="card-img-top" alt="portfolio">
-      <div class="card-body">
-        <p class="card-text"><a href="https://tbonexas.github.io/longcut/" target="_blank">The Long Cut</a></p>
+   </div>
+  </div>
+
+
+  <div class="qualifications">
+    <br>
+    <br>
+    <br>
+    <h1 class="tittles" id="div2">Qualifications</h1>
+    <div class="quali">
+    <br>
+    <br>
+    <br>
+    <p>
+    <ul>
+      <li>A.S. Computer Programming</li>
+      <br>
+      <p class="bulletDescription">
+      The A.S. Degree in Computer Programming is designed to prepare students for a career in computer programming. The degree offers a balanced set of classes that provides students with client, server and database programming skills required by the industry. Emphasis is placed on object-oriented programming applications, configuring servers, creating and navigating databases, and reusable software components. Students will demonstrate the ability to design and implement business environment applications that will contain the front end user interface and back end database.
+      </p>
+      <br>
+      <li>Skill Certificate in Object-Oriented Design & Programming</li>
+      <br>
+      <p class="bulletDescription">
+
+      </p>
+      <br>
+      <li>Skill Certificate in Computer Information Technology</li>
+      <br>
+      <p class="bulletDescription">
+
+      </p>
+      <br>
+      <li>Skill Certificate in C++ Programming</li>
+      <br>
+      <p class="bulletDescription">
+
+      </p>
+      <br>
+    </ul></p>
+    <br>
+    <br>
+    </div>
+  </div>
+
+  <div class="projects">
+    <br>
+    <br>
+    <br>
+    <h1 class="tittles" id="div3">Projects</h1>
+    <br>
+    <br>
+    <br>
+    <div class="row row-cols-2 ">
+      <div class="col"><div class="card mx-auto" >
+        <img src="images/pwsd.JPG" width="200" height="500" class="card-img-top" alt="portfolio">
+        <div class="card-body">
+          <p class="card-text">Password Generator</p>
+        </div>
+      </div></div>
+      <div class="col"><div class="card mx-auto" >
+        <img src="images/portfoli.png"  width="200" height="500"class="card-img-top" alt="portfolio">
+        <div class="card-body">
+          <p class="card-text">Under Construction</p>
+        </div>
+      </div></div>
+      <div class="col"><div class="card mx-auto" >
+        <img src="images/scheduler.JPG"  width="200" height="500"class="card-img-top" alt="portfolio">
+        <div class="card-body">
+          <p class="card-text">Scheduler</p>
+        </div>
+      </div></div>
+      <div class="col"><div class="card mx-auto">
+        <img src="images/lC.JPG"  width="200" height="500" class="card-img-top" alt="portfolio">
+        <div class="card-body">
+          <p class="card-text">The Long Cut</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
-</div>
-</div>
-</div>
+  </div>
+
+  <div class="contact">
+    <br>
+    <br>
+    <br>
+    <h1 class="tittles" id="div4">contact</h1>
+    <br>
+    <br>
+    <br>
+  
+  </div>
+ 
 
 </body>
 
 <footer id="footer">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-bottom ">
-    
-    <div class="navbar">
-      <p id="fotterTxt">"The way to get started is to quit talking and begin doing." -Walt Disney</p>
-     
-    </div>
-   
-  </nav>
  
 </footer>
 
