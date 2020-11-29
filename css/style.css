@@ -68,6 +68,11 @@ body {
 .tittles{
   font-family: 'Spectral', serif;
   font-weight: 600;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
   text-align: center;
   font-size: 100px;
 }
@@ -80,6 +85,9 @@ body {
   background-color: #111;
 }
 .image-cropper {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 100px;
   height: 100px;
   position: relative;
@@ -117,6 +125,13 @@ body {
   font-style: italic;
 }
 /* projects div */
+.project-cropper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 100%;
+}
 .projects {
   margin-left: 200px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
@@ -125,8 +140,52 @@ body {
   background-color: #111;
 
 }
+/* contact div */
+.icons{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+}
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+@media all and (max-width: 600px) {
+  .sidenav {
+    padding-top: 15px; 
+  width: 18%;}
+  #mySidenav a {
+    font-size: 12px;
+  }
+  .all{
+    margin-left: -60px;
+    width: 150%;
+    overflow: hidden;
+    background-color: #111;
+  }
+  .tittles{
+    font-family: 'Spectral', serif;
+    font-weight: 600;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-size: 32px;
+  }
+  .quali{
+    font-family: 'Spectral', serif;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .about{
+    font-family: 'Spectral', serif;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  body{
+    background-color: #111;
+  }
+  .contact{
+    background-color: #f1f1f1;
+  }
 }
