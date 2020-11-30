@@ -28,7 +28,7 @@ body {
   background-color:#111;
 }
 
-#qualifications {
+#notabilities {
   top: 80px;
   background-color: #111; 
 }
@@ -107,15 +107,15 @@ body {
   font-size: 20px;
   font-weight: 300;
 }
-/* qualifications div */
-.qualifications {
+/* notabilities div */
+.notabilities {
   margin-left: 200px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
   color: #f1f1f1;
   background-color: #111;
 }
-.quali{
+.notabil{
   font-family: 'Spectral', serif;
   font-size: 20px;
   font-weight: 300;
@@ -152,13 +152,13 @@ body {
 @media all and (max-width: 600px) {
   .sidenav {
     padding-top: 15px; 
-  width: 18%;}
+  width: 20%;}
   #mySidenav a {
     font-size: 12px;
   }
   .all{
     margin-left: -60px;
-    width: 150%;
+    width: 120%;
     overflow: hidden;
     background-color: #111;
   }
@@ -171,21 +171,39 @@ body {
     width: 50%;
     font-size: 32px;
   }
-  .quali{
+  .notabil{
     font-family: 'Spectral', serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
   }
   .about{
     font-family: 'Spectral', serif;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
   }
   body{
     background-color: #111;
   }
-  .contact{
+  /* .contact{
     background-color: #f1f1f1;
+  } */
+  #mySidenav a:hover {
+    left: 10px; /* On mouse-over, make the elements appear as they should */
+    color: #818181;
+  }
+  .left{
+    text-align: left;
+    margin-left: -10px;
+  }
+  .contactH1{
+    margin-left: 200px;
+
+  }
+  .col-sm{
+   width: 20%;
+   display: grid;
+   padding-left: 80px;
+   
   }
 }
