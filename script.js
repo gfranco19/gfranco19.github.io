@@ -11,9 +11,9 @@ function scrollFunction(x){
           $(window).scroll(function(){
             $(".projects").css("opacity", 6.8 - $(window).scrollTop() / 1000);
           });
-        $(".fa-github").addClass("fa-3x");
-        $(".fa-linkedin").addClass("fa-3x");
-        $(".fa-file").addClass("fa-3x");
+        $(".fa-github").addClass("fa-1x");
+        $(".fa-linkedin").addClass("fa-1x");
+        $(".fa-file").addClass("fa-1x");
         console.log("working");
   
     }else{
@@ -26,9 +26,9 @@ function scrollFunction(x){
   $(window).scroll(function(){
     $(".projects").css("opacity", 4.2 - $(window).scrollTop() / 1000);
   });
-  $(".fa-github").addClass("fa-5x");
-  $(".fa-linkedin").addClass("fa-5x");
-  $(".fa-file").addClass("fa-5x");
+  $(".fa-github").addClass("fa-2x");
+  $(".fa-linkedin").addClass("fa-2x");
+  $(".fa-file").addClass("fa-2x");
 }
 }
 
